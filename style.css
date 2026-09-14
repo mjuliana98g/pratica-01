@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    font-size: 42px;
+} */
+
+p {
+    font-size: 1rem;
+}
+
+/* body {
+    color: chocolate
+} */
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 60px;
+}
+
+.form-nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    }
+
+.navigation a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black
+}
+
+.logotipo {
+    width: 100%;
+}
+
+/* # para IDs e . para classes (não misturar) */
+#tituloId {
+    color: rgb(204, 0, 255);
+}
+
+.titulo {
+    color: yellowgreen
+}
+
+.titulo2 {
+    color: rgb(255, 0, 204)
+}
+
+h1 {
+    color: rgb(165, 42, 130) !important;
+    font-size: 50px;
+}
+
+a {
+    color: rgb(242, 0, 255);
+    text-decoration: none;
+}
+
+/* manteve o text-decorations */
+a[target="_blank"] {
+    color: rgb(140, 0, 255);
+}
+
+button:hover {
+    background-color: rgb(255, 0, 76);
+    color: white;
+    cursor: pointer;
+}
+
+a[target="_blank"]::after {
+    content: "(abre uma nova aba)";
+}
