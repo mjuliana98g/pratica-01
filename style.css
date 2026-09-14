@@ -6,24 +6,28 @@
 
 /* html {
     font-size: 42px;
-} */
+}  */
 
 p {
     font-size: 1rem;
 }
 
-/* body {
-    color: chocolate
-} */
+body {
+    font-family: 'Arial', sans-serif;
+}
 
+/* header  */
 .header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    max-width: 4000px;
+    margin: 0 auto; 
     padding: 8px 60px;
 }
-
+  
 .form-nav-container {
     display: flex;
     flex-direction: column;
@@ -49,40 +53,77 @@ p {
     width: 100%;
 }
 
-/* # para IDs e . para classes (não misturar) */
-#tituloId {
-    color: rgb(204, 0, 255);
+
+/* main */
+
+.seccao-noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 0px 400px 0px 400px;
 }
 
-.titulo {
-    color: yellowgreen
+.noticia {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #eaeaea; 
+    padding-top: 50px; 
 }
 
-.titulo2 {
-    color: rgb(255, 0, 204)
+.visual-artigo {
+    width: 100%;
+    height: 60%;
+    aspect-ratio: 16 / 9; /* Mantém a proporção de largura/altura correta automaticamente */
+    overflow: hidden;
 }
 
-h1 {
-    color: rgb(165, 42, 130) !important;
-    font-size: 50px;
+.imagem-artigo {
+    width: 100%;
+    height: 100%;
 }
 
-a {
-    color: rgb(242, 0, 255);
+.conteudo-artigo {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 16px 0px 8px 0px;}
+
+.conteudo-artigo a {
     text-decoration: none;
+    color: black;
 }
 
-/* manteve o text-decorations */
-a[target="_blank"] {
-    color: rgb(140, 0, 255);
+.conteudo-artigo a:hover {
+    color: gray
 }
 
-button:hover {
-    background-color: rgb(255, 0, 76);
+.data-artigo {
+    font-size: 1.7rem;
+    color: grey;
+    margin: 16px 16px 16px 0px;
+}
+
+.mais-noticias {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 400px 100px 0px
+}
+
+.mais-noticias button {
+    width: 300px;
+    height: 60px;
+    background-color: black;
     color: white;
     cursor: pointer;
+    font-size: 1.7rem;
+    text-decoration: none;
+    border-radius: 8px; 
+}
+.seta-mais-noticias {
+    font-size: 1.5rem;
 }
 
-a[target="_blank"]::after {
-    content: "(abre uma nova aba)";
+.mais-noticias button:hover {
+    background-color: grey;
+    cursor: pointer;
 }
